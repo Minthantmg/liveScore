@@ -17,7 +17,7 @@ const Page = () => {
     return (
         <div className="px-10 py-10">
             {isLoading && <Loading />}
-            {isError && (<>Error...</>)}
+            {isError && <Loading />}
             {isSuccess && (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-10">
                     {feed.map((item: any) => (
